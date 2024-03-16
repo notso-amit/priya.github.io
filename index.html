@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>navigation</title>
+	<meta name="description"
+		content="An experimental slideshow with an inclined look with three slide previews and a content view on click." />
+	<meta name="keywords" content="slideshow, javascript, tweenmax, rotation, animation, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+</head>
+
+<body class="dark-mode">
+	<main class="content">
+		<div class="content">
+			<article class="content__item">
+				<button id="btn" class="button img-wrap--content pos2 position">BACK</button>
+				<div class="img-wrap nosvg stayinplace"></div>
+				<div class="img-wrap img-wrap--content stayinplace">
+					<div class="img img--content"></div>
+				</div>
+				
+				<iframe src="about:blank" id="bio"></iframe>
+			</article>
+			<article class="content__item">
+				<button id="btn2" class="button pos2 img-wrap--content position">BACK</button>
+				<div class="tin">
+					<iframe class="your-iframe" src="baby/baby.html"></iframe>
+				</div>
+			</article>
+			<article class="content__item">
+				<button id="btn3" class="button pos2 img-wrap--content position">BACK</button>
+				<div class="tin">
+					<iframe class="your-iframe" src="modern/index.html"></iframe>
+				</div>			
+			</article>
+			<article class="content__item">
+				<button id="btn2" class="button pos2 img-wrap--content position">BACK</button>
+				<div id="iframe-container">
+					<span id="excuse">UNDER CONSTRICTION PLEASE WAIT</span>
+				</div>
+				
+			</article>
+		</div>
+		<div class="revealer">
+			<div class="revealer__inner"></div>
+		</div>
+		<div class="grid grid--slideshow">
+			<figure id="touch" class="grid__item grid__item--slide">
+				<span class="number">01</span>
+				<div class="img-wrap">
+					<div class="img" style="background-image: url(img/1.jpg);"></div>
+				</div>
+				<figcaption class="caption">Bio</figcaption>
+			</figure>
+			<figure class="grid__item grid__item--slide">
+				<span class="number">02</span>
+				<div class="img-wrap">
+					<div class="img" style="background-image: url(img/2.jpg);"></div>
+				</div>
+				<figcaption class="caption">B Pics</figcaption>
+			</figure>
+			<figure class="grid__item grid__item--slide">
+				<span class="number">03</span>
+				<div class="img-wrap">
+					<div class="img" style="background-image: url(img/3.jpg);"></div>
+				</div>
+				<figcaption class="caption">M Pics</figcaption>
+			</figure>
+			<figure class="grid__item grid__item--slide">
+				<span class="number">04</span>
+				<div class="img-wrap">
+					<div class="img" style="background-image: url(img/4.jpg);"></div>
+				</div>
+				<figcaption class="caption">Credits and stuffs</figcaption>
+			</figure>
+			<div class="titles-wrap">
+				<div class="grid grid--titles">
+					<h3 class="grid__item grid__item--title">Biography</h3>
+					<h3 class="grid__item grid__item--title">Baby</h3>
+					<h3 class="grid__item grid__item--title">Mordern</h3>
+					<h3 class="grid__item grid__item--title">More</h3>
+				</div>
+			</div>
+			<div class="grid grid--interaction">
+				<div class="grid__item grid__item--cursor grid__item--left"></div>
+				<div id="hell" class="grid__item grid__item--cursor grid__item--center"></div>
+				<div class="grid__item grid__item--cursor grid__item--right"></div>
+			</div>
+		</div>
+		<div class="frame">
+			<div class="frame__title-wrap">
+				<h1 class="frame__title"></h1>
+				<div class="frame__links">
+					<a href="examole@gmail.com" target="_blank">Contact Us</a>
+					<a href="https://youtube.com" target="_blank">YouTube</a>
+					<a href="https://instagram.com" target="_blank">Instagram</a>
+				</div>
+				<!-- <div class="frame__mode" role="radiogroup">
+					<div class="frame__mode-item frame__mode-item--dark">
+						<input id="mode-1" type="radio" name="mode" class="frame__mode-input"></input>
+						<label class="frame__mode-label" for="mode-1">Dark mode</label>
+					</div>
+					<div class="frame__mode-item">
+						<input id="mode-2" type="radio" name="mode" class="frame__mode-input" checked></input>
+						<label class="frame__mode-label frame__mode-label--light" for="mode-2">Light mode</label>
+					</div>
+				</div> -->
+			</div>
+		</div><!-- /frame -->
+	</main>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/charming.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/demo.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+		integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="app2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+
+.main-heading {
+    color: #fff; /* Text color for your heading */
+  }
+  
+  .square {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    background-color: #1a084e; /* Background color of the square */
+    border: 2px solid #fff; /* Border color and width */
+    z-index: 1; /* Make sure it's behind the heading */
+  }
+  
